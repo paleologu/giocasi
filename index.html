@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Page Title -->
+    <title>Giocasi Property Management </title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#f23838">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700%7CRoboto:300,400,700" rel="stylesheet">
+    <link href="assets/vendor/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+    <link href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/dist/aos.css" rel="stylesheet">
+
+    <!-- Theme Stylesheets -->
+    <link href="assets/css/theme.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner">
+            <div class="circles"></div>
+        </div>
+    </div>
+    <!-- End of Preloader -->
+
+
+    <!-- Header -->
+    <header class="spyre-navbar navbar navbar-expand-lg bg-secondary navbar-dark fixed-top align-items-center" data-transparent data-text-color="#ffffff">
+        <div class="container">
+            <a class='navbar-brand me-lg-5 me-xl-7' href='/pages/'>
+<!--                     <img src="assets/img/logo.svg" class="d-none d-lg-block" alt="Giocasi" width="183" />
+    <img src="assets/img/logo.svg" class="d-block d-lg-none" alt="Giocasi" width="150" /> -->
+    GIOCASI
+</a>
+
+<span class="navbar-text flex-fill d-none d-md-inline-block text-white">
+    Contact us: <a href="#" class="ps-2 text-white">info@giocasi.ro</a><a href="#" class="ps-5 text-white">+1-202-555-0149</a>
+</span>
+
+<div class="search d-none d-lg-flex justify-content-end ms-auto me-2">
+    <input class="form-control me-2" type="text">
+    <i class="zmdi zmdi-search"></i>
+</div>
+
+<div class="menu-toggle">
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="cross">
+        <span></span>
+        <span></span>
+    </div>
+</div>
+</div>
+
+<!-- Overlay -->
+<div class="spyre-navbar-overlay overlay-slide">
+    <div class="container">
+        <div class="row">
+            <div class="spyre-navbar-nav-container col-md-6 col-lg-5 col-xl-4 bg-white ext-s position-relative">
+                <nav class="spyre-navbar-nav">
+                    <ul class="spyre-nav">
+                        <li class="spyre-nav-item"><a class='spyre-nav-link' href='/pages/'>Overview</a></li>
+                        <li class="spyre-nav-item dropdown">
+                            <a href="#" class="spyre-nav-link dropdown-toggle" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="dropdown-menu-item"><a class='dropdown-menu-link' href='/pages/home'>Homepage</a></li>
+                                <li class="dropdown-menu-item"><a class='dropdown-menu-link' href='/pages/services'>Services</a></li>
+                                <li class="dropdown-menu-item"><a class='dropdown-menu-link' href='/pages/blog'>Blog</a></li>
+                                <li class="dropdown-menu-item"><a class='dropdown-menu-link' href='/pages/blog-single'>Blog single</a></li>
+                                <li class="dropdown-menu-item"><a class='dropdown-menu-link' href='/pages/portfolio'>Portfolio</a></li>
+                                <li class="dropdown-menu-item"><a class='dropdown-menu-link' href='/pages/about'>About</a></li>
+                                <li class="dropdown-menu-item"><a class='dropdown-menu-link' href='/pages/contact'>Contact</a></li>
+                                <li class="dropdown-menu-item"><a class='dropdown-menu-link' href='/pages/team'>Team</a></li>
+                                <li class="dropdown-menu-item"><a class='dropdown-menu-link' href='/pages/faq'>FAQ</a></li>
+                                <li class="dropdown-menu-item"><a class='dropdown-menu-link' href='/pages/pricing'>Pricing</a></li>
+                                <li class="dropdown-menu-item"><a class='dropdown-menu-link' href='/pages/careers'>Careers</a></li>
+                                <li class="dropdown-menu-item"><a class='dropdown-menu-link' href='/pages/careers-single'>Careers single</a></li>
+                                <li class="dropdown-menu-item"><a class='dropdown-menu-link' href='/pages/coming-soon'>Coming soon</a></li>
+                                <li class="dropdown-menu-item"><a class='dropdown-menu-link' href='/pages/404'>404</a></li>
+                                <li class="dropdown-menu-item"><a class='dropdown-menu-link' href='/pages/sign-in'>Sign In</a></li>
+                                <li class="dropdown-menu-item"><a class='dropdown-menu-link' href='/pages/sign-up'>Sing Up</a></li>
+                                <li class="dropdown-menu-item"><a class='dropdown-menu-link' href='/pages/recover-account'>Recover account</a></li>
+                            </ul>
+                        </li>
+                        <li class="spyre-nav-item"><a class='spyre-nav-link' href='/docs/animations'>Components</a></li>
+                        <li class="spyre-nav-item"><a class='spyre-nav-link' href='/docs/'>Docs</a></li>
+                        <li class="spyre-nav-item"><a href="https://themes.getbootstrap.com/product/spyre-slick-contemporary-multipurpose-theme" target="_blank" class="spyre-nav-link">Purchase</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-lg-7 col-xl-8 d-none d-md-block">
+                <div class="d-flex flex-column h-100">
+                    <div class="d-flex h-100">
+                        <div class="align-self-center">
+                            <div class="text-uppercase"
+                            data-background-text="communication"
+                            data-color="#7079a2"
+                            data-opacity="0.02"
+                            data-font-size="85px"
+                            data-font-weight="500"
+                            data-offset-x="-5%"
+                            data-letter-spacing="5px"
+                            ></div>
+                            <div class="text-uppercase"
+                            data-background-text="planning"
+                            data-color="#7079a2"
+                            data-opacity="0.04"
+                            data-font-size="175px"
+                            data-font-weight="500"
+                            data-offset-x="29%"
+                            data-padding="7vh 0 2vh 0"
+                            data-letter-spacing="5px"
+                            ></div>
+                            <div class="text-uppercase"
+                            data-background-text="delivering"
+                            data-color="#7079a2"
+                            data-opacity="0.03"
+                            data-font-size="140px"
+                            data-font-weight="500"
+                            data-offset-x="15%"
+                            data-letter-spacing="5px"
+                            ></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-auto">
+                        <ul class="nav flex-nowrap float-end">
+                            <li class="nav-item">
+                                <a class="nav-link px-2" href="#" target="_blank">
+                                    <i class="zmdi zmdi-twitter text-white"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2" href="#" target="_blank">
+                                    <i class="zmdi zmdi-instagram text-white"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2" href="#" target="_blank">
+                                    <i class="zmdi zmdi-facebook-box text-white"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2" href="#" target="_blank">
+                                    <i class="zmdi zmdi-pinterest text-white"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2" href="#" target="_blank">
+                                    <i class="zmdi zmdi-flickr text-white"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2" href="#" target="_blank">
+                                    <i class="zmdi zmdi-youtube text-white"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Overlay -->
+</header>
+<!-- End of Header -->
+
+
+<!-- Main Content -->
+<main class="main minh-100vh">
+    <!-- Section -->
+    <section class="py-0 overflow-hidden text-center">
+        <div class="bg-container overlay overlay-60 parallax" data-rellax-percentage="0.5" style="background-image: url(assets/img/backgrounds/bucharest-panorama.jpeg)"></div>
+        <div class="container">
+            <div class="row h-100vh justify-content-center align-items-center">
+                <div class="col-lg-8 position-relative">
+                    <h1 class="text-white text-uppercase fs-5 fs-lg-7" data-aos="fade-down" data-aos-duration="1000">Giocasi</h1>
+                    <p class="mb-5 fs-lg-1 text-white" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">Property Management</p>
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <a href="#section-4" class="btn btn-primary mx-2 px-5 mb-3" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000" data-smooth-scroll data-smooth-scroll-hash="false">Servicii</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="https://themes.getbootstrap.com/product/spyre-slick-contemporary-multipurpose-theme/" target="_blank" class="btn btn-light px-5 mx-2" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">Contact<i class="zmdi zmdi-long-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="move d-none d-lg-block">
+                    <a href="#section-2" class="text-white" data-smooth-scroll data-smooth-scroll-hash="false">
+                        <i class="zmdi zmdi-long-arrow-down zmdi-hc-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Section -->
+
+    <!-- Section -->
+    <section class="pb-0">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-6 mb-7 mb-lg-0">
+                    <h3 class="my-0 fs-1 fw-medium text-secondary text-uppercase">GIOCASI PROPERTY MANAGEMENT</h3>
+                    <h2 class="mb-5 fw-medium text-primary text-uppercase">Gestionam imobile pentru proprietari</h2>
+                    <p class="mb-4">
+                        La Giocasi Property Management, suntem aici pentru a gestiona apartamentele și proprietățile tale în fiecare detaliu. Oferim servicii complete care acoperă toate aspectele proprietăților tale, inclusiv găsirea chiriașilor potriviți, comunicarea cu chiriașii pentru colectarea chiriei și gestionarea tuturor plăților. Noi ne asigurăm că facturile și taxele sunt plătite la timp, iar inventarul este întreținut în stare excelentă. De asemenea, ne ocupăm de gestionarea garanției plătite de chiriași și reînnoirea contractelor de utilități. 
+                    </p>
+                    <p>
+                        Fiecare detaliu este gestionat profesional pentru a-ți oferi o experiență fără griji în administrarea proprietăților tale. Indiferent de mărimea sau nevoile specifice ale apartamentului tău, suntem aici să îți oferim servicii personalizate și de încredere.
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary btn-lg mt-4 px-6">Services<i class="zmdi zmdi-link ms-3"></i></a> -->
+                </div>
+                <div class="col-lg-4">
+                    <img src="assets/img/img-41.jpeg" class="img-fluid w-100 mb-4 mb-lg-0" alt="" />
+                    <img src="assets/img/img-42.jpeg" class="img-fluid w-100 ms-lg-n7 mt-lg-n9" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Section -->
+
+    <!-- Section -->
+    <section id="section-2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 pe-lg-5">
+                            <h2 class="mb-4 fs-1 fw-medium text-uppercase"><span class="fs-2 pe-2 text-primary position-relative top-2">01</span>Economiseste timp</h2>
+                            <p class="fs--1">
+                                Lasă-ne să ne ocupăm de toate detaliile legate de proprietatea ta, astfel încât să te poți concentra pe lucrurile care contează cu adevărat.
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-lg-4 px-lg-5 border-start-centered-40 border-start-centered-faded">
+                            <h2 class="mb-4 fs-1 fw-medium text-uppercase"><span class="fs-2 pe-2 text-primary position-relative top-2">02</span>Maximizează Veniturile</h2>
+                            <p class="fs--1">Cu experiența noastră solidă, găsim chiriașii potriviți și gestionăm eficient proprietățile tale pentru a-ți aduce veniturile maxime.</p>
+                        </div>
+                        <div class="col-md-6 col-lg-4 ps-lg-5 border-start-centered-40 border-start-centered-faded">
+                            <h2 class="mb-4 fs-1 fw-medium text-uppercase"><span class="fs-2 pe-2 text-primary position-relative top-2">03</span>Liber de griji</h2>
+                            <p class="fs--1">
+                                Noi gestionăm facturile, taxele și relația cu chiriașii. Tu poți avea liniște sufletească, știind că proprietatea ta este în mâini bune.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Section -->
+
+
+    <!-- Section -->
+    <section class="py-8 py-md-11 overflow-hidden">
+        <div class="bg-container parallax" data-rellax-percentage="0.5" style="background-image: url(assets/img/backgrounds/coridor.jpeg);"></div>
+    </section>
+    <!-- End of Section -->
+
+
+
+
+
+    <!-- Section -->
+    <section>
+        <div class="container">
+            <div class="row no-gutters justify-content-between">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="bg-secondary text-white mb-4 px-5 pt-2 pb-5">
+                                <div
+                                data-background-text="01"
+                                data-color="#ffffff"
+                                data-opacity="0.5"
+                                data-font-size="36px"
+                                data-font-weight="700"
+                                data-offset-x="-3.25rem"
+                                ></div>
+                                <h4 class="mb-4 fs-1 fw-medium text-uppercase">Găsirea chiriașilor</h4>
+                            </div>
+                            <div class="bg-secondary text-white mb-4 px-5 pt-2 pb-5">
+                                <div
+                                data-background-text="02"
+                                data-color="#ffffff"
+                                data-opacity="0.5"
+                                data-font-size="36px"
+                                data-font-weight="700"
+                                data-offset-x="-3.25rem"
+                                ></div>
+                                <h4 class="mb-4 fs-1 fw-medium text-uppercase">Gestionarea relației cu chiriașii</h4>
+                            </div>
+                            <div class="bg-secondary text-white mb-4 px-5 pt-2 pb-5">
+                                <div
+                                data-background-text="03"
+                                data-color="#ffffff"
+                                data-opacity="0.5"
+                                data-font-size="36px"
+                                data-font-weight="700"
+                                data-offset-x="-3.25rem"
+                                ></div>
+                                <h4 class="mb-4 fs-1 fw-medium text-uppercase">Plata taxelor și facturilor</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-5 mb-lg-0">
+                            <div class="bg-secondary text-white mb-4 px-5 pt-2 pb-5">
+                                <div
+                                data-background-text="04"
+                                data-color="#ffffff"
+                                data-opacity="0.5"
+                                data-font-size="36px"
+                                data-font-weight="700"
+                                data-offset-x="-3.25rem"
+                                ></div>
+                                <h4 class="mb-4 fs-1 fw-medium text-uppercase">Gestionarea inventarului</h4>
+                            </div>
+                            <div class="bg-secondary text-white mb-4 px-5 pt-2 pb-5">
+                                <div
+                                data-background-text="05"
+                                data-color="#ffffff"
+                                data-opacity="0.5"
+                                data-font-size="36px"
+                                data-font-weight="700"
+                                data-offset-x="-3.25rem"
+                                ></div>
+                                <h4 class="mb-4 fs-1 fw-medium text-uppercase">Gestiunea contractelor de utilități</h4>
+                            </div>
+                            <div class="bg-secondary text-white mb-4 px-5 pt-2 pb-5">
+                                <div
+                                data-background-text="06"
+                                data-color="#ffffff"
+                                data-opacity="0.5"
+                                data-font-size="36px"
+                                data-font-weight="700"
+                                data-offset-x="-3.25rem"
+                                ></div>
+                                <h4 class="mb-4 fs-1 fw-medium text-uppercase">Revizii periodice</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <h3 class="my-0 fs-1 fw-medium text-secondary text-uppercase">Giocasi Property Management</h3>
+                    <h2 class="mb-5 fw-medium text-primary text-uppercase">Serviciile noastre</h2>
+                    <p class="mb-4">La Giocasi Property Management, ne străduim să oferim soluții complete pentru gestionarea proprietăților tale. Cu experiența noastră vastă și dedicarea față de fiecare detaliu, suntem aici pentru a simplifica procesul de administrare a proprietăților tale. Iată câteva dintre serviciile noastre cheie.</p>
+                    <p class="mb-4">Pentru noi fiecare proprietate este importanta.</p>
+                    <p>Noi înțelegem că fiecare proprietate are nevoi unice și fiecare proprietar are așteptări specifice. Cu această înțelegere, abordăm fiecare proiect cu atenție la detalii și flexibilitate. Indiferent dacă deții un singur apartament sau o întreagă colecție de proprietăți, fiecare serviciu pe care îl oferim este adaptat nevoilor tale specifice. Suntem aici pentru a face experiența ta cu gestionarea proprietăților cât mai simplă și eficientă posibil. La Giocasi Property Management, ne mândrim cu abordarea noastră personalizată și angajamentul nostru față de succesul proprietăților tale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Section -->
+
+    <!-- Section -->
+<!--             <section class="pt-0">
+                <div class="container-fluid px-xl-0">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 align-self-stretch py-6 py-lg-9 position-relative">
+                            <div class="bg-container overlay overlay-primary-90" style="background-image: url(assets/img/img-06.jpeg);"></div>
+                            <div class="position-relative">
+                                <div class="px-sm-6 px-lg-8 px-xl-10 position-relative">
+                                    <h3 class="my-0 fs-1 fw-medium text-uppercase">We can help</h3>
+                                    <h2 class="mb-4 fw-medium text-white text-uppercase">Services</h2>
+                                    <p class="mb-0 fs--1 text-white">Sed facilisis blandit diam ut commodo. Duis consequat justo eu eros varius, non interdum purus sagittis. Integer imperdiet justo vulputate lectus mattis fringilla. Maecenas arcu turpis, imperdiet porttitor consectetur condimentum, pretium eget ante. Aenean mattis mauris leo, ac pretium justo viverra in. In sit amet malesuada purus.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 px-sm-8 px-ld-9 px-xl-12 pt-6 pb-4 py-lg-10 py-xl-8 align-self-stretch">
+                            <h3 class="my-0 mb-4 fs-1 fw-bold text-uppercase"><i class="zmdi zmdi-sun me-2"></i>Core Services</h3>
+                            <ul class="list-unstyled mb-5">
+                                <li class="mb-1"><span class="h6 text-primary fw-bold me-3">01</span>Strategy</li>
+                                <li class="mb-1"><span class="h6 text-primary fw-bold me-3">02</span>Advisory Consulting</li>
+                                <li class="mb-1"><span class="h6 text-primary fw-bold me-3">02</span>Managed Services</li>
+                                <li class="mb-1"><span class="h6 text-primary fw-bold me-3">02</span>Concept Developemnt</li>
+                                <li class="mb-1"><span class="h6 text-primary fw-bold me-3">05</span>Business</li>
+                            </ul>
+                            <a href="#" class="h6 fw-bold text-uppercase text-primary float-end float-lg-left">View more<i class="zmdi zmdi-chevron-right ps-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- End of Section -->
+
+            <!-- Section -->
+            <section class="py-6 py-lg-8 bg-primary text-white">
+                <div class="container">
+                    <div class="row align-items-center text-center">
+                        <div class="col">
+                            <h2 class="mb-5">Descoperă cum putem face gestionarea proprietății tale mai eficientă și mai rentabilă.</h2>
+                            <a href="contact" target="_blank" class="btn bg-white text-primary mb-4 px-4">Hai sa vorbim!<i class="zmdi zmdi-shopping-car ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Section -->
+
+            <!-- Section -->
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center">
+                            <h3 class="my-0 fs-1 fw-medium text-secondary text-uppercase">GPM</h3>
+                            <h2 class="mb-5 fw-medium text-primary text-uppercase">ECHIPA</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="card mt-6">
+                                <div class="px-3 mt-n4">
+                                    <img src="assets/img/profile-01.jpeg" class="card-img" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title mb-0 text-uppercase">Mihai Giocasi</h6>
+                                    <p class="card-text mb-3 fs--1 text-primary fw-bold">Fondator & CEO</p>
+                                    <p class="card-text fs--1">Quisque feugiat sollicitudin nulla nec pulvinar. Vestibulum convallis tempor felis nec iaculis. Nunc efficitur a tortor vitae rhoncus.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="card mt-6">
+                                <div class="px-3 mt-n4">
+                                    <img src="assets/img/profile-01.jpeg" class="card-img" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title mb-0 text-uppercase">Mihail Paleologu</h6>
+                                    <p class="card-text mb-3 fs--1 text-primary fw-bold">CTO</p>
+                                    <p class="card-text fs--1">Quisque feugiat sollicitudin nulla nec pulvinar. Vestibulum convallis tempor felis nec iaculis. Nunc efficitur a tortor vitae rhoncus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Section -->
+
+
+
+        </main>
+        <!-- End of Main Content -->
+
+
+        <!-- Footer -->
+        <footer class="footer text-white" style="background-image: url(assets/img/footer-bg.jpeg)">
+            <div class="container d-flex h-100">
+                <div class="row flex-grow-1">
+                    <div class="col-lg-3 pt-3 ext-s position-relative bg-secondary text-center text-lg-start position-relative">
+                        <div class="d-flex flex-column h-100">
+                            <div class="pt-5 pt-lg-8 pb-4">
+                                <img src="assets/img/logo-small.svg" alt="" width="92" class="mb-4" />
+                                <p class="mb-4 mt-3 fs--1">New York, NY<br />
+                                    62 Birchpond St.<br />
+                                Crystal Lake, NY 11762</p>
+
+                                <p class="fs--1"><a href="#" class="text-white"><i class="zmdi zmdi-phone zmdi-hc-fw me-1"></i>+1-202-555-0149</a><br />
+                                    <a href="#" class="text-white"><i class="zmdi zmdi-email zmdi-hc-fw me-1"></i>info@giocasi.ro</a></p>
+                                </div>
+
+                                <ul class="mt-4 mt-lg-auto mb-5 mb-lg-0 list-unstyled list-inline">
+                                    <li class="me-3 list-inline-item">
+                                        <a href="#" target="_blank">
+                                            <i class="zmdi zmdi-twitter text-white"></i>
+                                        </a>
+                                    </li>
+                                    <li class="me-3 list-inline-item">
+                                        <a href="#" target="_blank">
+                                            <i class="zmdi zmdi-instagram text-white"></i>
+                                        </a>
+                                    </li>
+                                    <li class="me-3 list-inline-item">
+                                        <a href="#" target="_blank">
+                                            <i class="zmdi zmdi-facebook-box text-white"></i>
+                                        </a>
+                                    </li>
+                                    <li class="me-3 list-inline-item">
+                                        <a href="#" target="_blank">
+                                            <i class="zmdi zmdi-pinterest text-white"></i>
+                                        </a>
+                                    </li>
+                                    <li class="me-3 list-inline-item">
+                                        <a href="#" target="_blank">
+                                            <i class="zmdi zmdi-flickr text-white"></i>
+                                        </a>
+                                    </li>
+                                    <li class="me-3 list-inline-item">
+                                        <a href="#" target="_blank">
+                                            <i class="zmdi zmdi-youtube text-white"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col d-flex flex-column mb-2 mt-3 ps-lg-7 position-relative">
+                            <div class="row pt-5 pt-lg-8 pb-4 pb-lg-6">
+                                <div class="col-6 col-lg-3">
+                                    <h6 class="mb-1 mb-lg-4 text-uppercase">Services</h6>
+                                    <ul class="pt-2 mb-5 fw-light list-unstyled">
+                                        <li class="my-1"><a href="#" class="text-white">Design</a></li>
+                                        <li class="my-1"><a href="#" class="text-white">Development</a></li>
+                                        <li class="my-1"><a href="#" class="text-white">Themes</a></li>
+                                        <li class="my-1"><a href="#" class="text-white">CMS</a></li>
+                                        <li class="my-1"><a href="#" class="text-white">Mobile</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <h6 class="mb-1 mb-lg-4 text-uppercase">About</h6>
+                                    <ul class="pt-2 mb-5 fw-light list-unstyled">
+                                        <li class="my-1"><a href="#" class="text-white">Cine suntem</a></li>
+                                        <li class="my-1"><a href="#" class="text-white">Contact</a></li>
+                                        <li class="my-1"><a href="#" class="text-white">The team</a></li>
+                                        <li class="my-1"><a href="#" class="text-white">Careers</a></li>
+                                        <li class="my-1"><a href="#" class="text-white">Locate store</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <h6 class="mb-1 mb-lg-4 text-uppercase">Help</h6>
+                                    <ul class="pt-2 mb-5 fw-light list-unstyled">
+                                        <li class="my-1"><a href="#" class="text-white">Sponsors</a></li>
+                                        <li class="my-1"><a href="#" class="text-white">FAQs</a></li>
+                                        <li class="my-1"><a href="#" class="text-white">Stories & Ideas</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="mt-auto d-flex justify-content-between">
+                                <span class="fs--3 fs-lg--2">&copy; Giocasi Property Management, 2023</span>
+                                <div class="fs--3 fs-lg--2"><a href="#" class="me-1 text-white">Confidentialitate</a>|<a href="#" class="ms-1 text-white">Termeni & Conditii</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+
+            <!-- Core Javascripts -->
+            <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+            <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+            <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+            <!-- Vendor Javascripts -->
+            <script src="assets/vendor/rellax/rellax.min.js"></script>
+            <script src="assets/vendor/aos/dist/aos.js"></script>
+
+            <!-- Theme Javascripts -->
+            <script src="assets/js/theme.js"></script>
+        </body>
+        </html>
